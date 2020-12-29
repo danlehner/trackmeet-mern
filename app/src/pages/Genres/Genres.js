@@ -8,4 +8,4 @@ const Genres = () => {
   )
 }
 
-export default Genre; 
+export default Genres; 
