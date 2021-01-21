@@ -7,7 +7,7 @@ function Register(props) {
   const [username, setUsername] = useState(""); 
   const [email, setEmail] = useState(""); 
   const [password, setPassword] = useState(""); 
-  const [profPic, setProfPic] = useState(""); 
+  const [profilePic, setProfilePic] = useState(""); 
   const [city, setCity] = useState(""); 
   const [bio, setBio] = useState(""); 
   const [error, setError] = useState(""); 
@@ -15,7 +15,7 @@ function Register(props) {
   function handleSubmit(e) {
     e.preventDefault() 
 
-    AuthModel.register({ username, email, password, profPic, city, bio}).then(res => {
+    AuthModel.register({ username, email, password, profilePic, city, bio}).then(res => {
       console.log(res)
       if (res.status === 201) {
         props.history.push('/login')
@@ -75,8 +75,8 @@ function Register(props) {
                type="text" 
                className="form-control" 
                name="profilePic" 
-               onChange={(e) => setProfPic(e.target.value)}
-               value={profPic} 
+               onChange={(e) => setProfilePic(e.target.value)}
+               value={profilePic} 
                />
             </div>
             <div className="form-group">

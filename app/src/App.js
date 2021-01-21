@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import Routes from './config/Routes'; 
-import './App.scss'; 
+
+import './sass/app.scss'; 
 
 function App() {
   return (
