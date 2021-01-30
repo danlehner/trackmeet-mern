@@ -1,6 +1,6 @@
-const URL = "http://localhost:3001/api/v1/users";
+const URL = "http://localhost:3001/api/v1/songs";
 
-class UserModel {
+class SongModel {
   static show = () => {
     return fetch(URL, {
       method: "GET", 
@@ -12,4 +12,4 @@ class UserModel {
   }
 }
 
-export default UserModel; 
+export default SongModel; 

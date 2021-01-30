@@ -35,7 +35,7 @@ const Login = (props) => {
           backgroundImage: `url("https://miro.medium.com/max/10368/1*o8tTGo3vsocTKnCUyz0wHA.jpeg")`, 
           backgroundSize: "cover"
         }}>
-          <h1 className="text-white mt-3 display-2">Register</h1>
+          <h1 className="text-white mt-3 display-2">Login</h1>
         </div>
         <div className="col pl-4 border border-dark pt-3 pb-3">
           {error && <p>{error}</p>}

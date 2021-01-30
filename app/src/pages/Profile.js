@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react"; 
 
-import UserModel from "../models/UserModel";
+import ProfileModel from "../models/ProfileModel";
+
 import ProfileBox from "../components/ProfileBox"; 
+import CollectionBox from "../components/CollectionBox"; 
 
 const Profile = () => {
 
@@ -9,15 +11,23 @@ const Profile = () => {
 
   useEffect(function() {
     if (localStorage.getItem("uid")) {
-      UserModel.show().then(response => {
-        setUser(response.data)
+      ProfileModel.show().then(response => {
+        setUser(response.data); 
       })
     }
   }, []); 
 
+
   return (
     <div>
-    <ProfileBox user={user} />
+      {user ? 
+      <>
+        <ProfileBox user={user} />
+        <CollectionBox user={user} />
+        </>
+      :
+        <p>Loading</p>
+      }
     </div>
   )
 }

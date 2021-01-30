@@ -1,7 +1,7 @@
 import React from "react"; 
 
 const ProfileBox = (props) => {
-  const { username, profilePic, city, bio } = props.user; 
+  const { username, profilePic, city, bio, _id } = props.user; 
 
   return (
     <div>
@@ -24,6 +24,7 @@ const ProfileBox = (props) => {
            <div className="mb-3 mt-1">
             <h2 className="mt-3 align-self-center" style={{ color: "#5a7670" }}>Bio</h2>
             <p>{bio}</p>
+            <p>{_id}</p>
            </div>
            <div className="d-flex justify-content-end">
             <a href="#">
