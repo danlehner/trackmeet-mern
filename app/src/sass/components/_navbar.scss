@@ -1,0 +1,39 @@
+.navbar-brand {
+  font-family: 'Clarendon Regular', Arial, sans-serif; 
+  background-color: $brightred; 
+  color: $cloud !important; 
+  padding: 0 5px; 
+  :hover {
+    background-color: $cloud;
+    color: $brightred !important; 
+  }
+}
+
+#navbar {
+  background-color: $darkteal;
+}
+
+.nav-link {
+  color: $cloud; 
+  font-weight: 500 !important; 
+  :hover {
+    background-color: $cloud;
+    color: $darkteal !important; 
+  }
+}
+
+.nav-item form input {
+  background-color: $mutegold; 
+  border: 0px; 
+}
+
+@media screen and (max-width: 767px) {
+  .home-logout {
+    margin-left: 0px !important; 
+  }
+
+  .nav-item form input {
+    padding: 0.5em !important;  
+    margin-bottom: 2em; 
+  }
+}

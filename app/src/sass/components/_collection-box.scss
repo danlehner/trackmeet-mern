@@ -1,0 +1,27 @@
+#genre-column {
+  background-color: $brightred;
+  padding-left: 0px !important; 
+  z-index: 2; 
+  h3 {
+    color: $cloud; 
+  }
+}
+
+#artist-column {
+  background-color: $mutegold;
+  padding-left: 0px !important;
+  z-index: 1; 
+}
+
+#song-column {
+  background-color: $darkteal;
+  padding-left: 0px !important; 
+  h3 {
+    color: $cloud; 
+  }
+  input {
+    color: $cloud; 
+    background-color: $mutegold;
+    border: 0px; 
+  }
+}

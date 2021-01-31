@@ -1,0 +1,30 @@
+
+.logged-out-home h2 {
+  font-weight: 500 !important; 
+  font-family: 'Clarendon Regular', Arial, sans-serif; 
+  color: $mutegold; 
+  text-shadow: 2px 2px $cloud;
+}
+
+@media screen and (max-width: 767px) {
+  .logged-out-header {
+    text-align: center;
+  }
+
+  .logged-out-home h2, 
+  .login-home h1 {
+    text-align: center; 
+  }
+
+  .logged-out-home button {
+    margin-bottom: 2em; 
+  }
+
+  .logged-out-home .row, 
+  .login-home .row {
+    display: flex; 
+    flex-direction: column;
+  }
+}
+
+

@@ -27,6 +27,14 @@ a {
   text-decoration: none !important;
 } 
 
+hr {
+  background-color: white; 
+}
+
+.text-white {
+  color: $cloud !important; 
+}
+
 /* ---------- COMPONENT BOXES -------- */
 
 .show-container {
@@ -55,4 +63,27 @@ a {
 
 .text-white {
   color: $cloud; 
+}
+
+.col h3 {
+  z-index: -1; 
+  margin-left: -.2em; 
+}
+
+/* --------- CARDS --------- */
+
+.card {
+  max-width: 300px !important; 
+  background-color: transparent !important; 
+  border: 0px !important;
+}
+
+.card, .card-img {
+  border-radius: 0px; 
+}
+
+/* --------- BUTTONS ------- */
+
+.btn-warning {
+  background-color: #efa801 !important;
 }

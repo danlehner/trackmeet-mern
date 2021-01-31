@@ -1,7 +1,9 @@
 import React from "react"; 
 
 const PreviewCard = (props) => {
-  const { _id, artistPicture, name } = props.info
+  const { _id, artistPicture, name } = props.info; 
+
+  const isSongs = props.isSongs; 
 
   return (
     <div className="card">
@@ -13,12 +15,18 @@ const PreviewCard = (props) => {
         </div>
         <div className="col-md-7">
         <a href={`/profile/songs/${_id}`}>
-          <h6 className="card-text text-white mt-3 ml-1">{name}</h6>
+          { isSongs ? 
+          <h6 className="card-text text-white ml-1 mt-3">{name}</h6>
+          : 
+          <h3 className="card-text text-white ml-1 mt-2">{name}</h3>
+          }
         </a>
        </div>
-       <div className="col-md-3 mt-2 w-25">
-         <input className="w-100 h-50" type="submit" value="DELETE" />
-       </div>
+       { isSongs &&
+        <div className="col-md-3 mt-2 w-25">
+          <input className="w-100 h-60" type="submit" value="DELETE" />
+        </div>
+       }  
       </div>
     </div>
   )

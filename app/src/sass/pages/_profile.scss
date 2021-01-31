@@ -1,0 +1,14 @@
+@media screen and (max-width: 767px) {
+
+  .mobile-card-container {
+    display: flex; 
+    flex-flow: wrap; 
+    h3 {
+      font-size: 1rem !important; 
+    }
+  }
+
+  .card-img {
+    width: 100px !important; 
+  }
+}
