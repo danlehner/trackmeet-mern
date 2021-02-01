@@ -5,6 +5,11 @@ const PreviewCard = (props) => {
 
   const isSongs = props.isSongs; 
 
+  function handleDelete(e) {
+    e.preventDefault(); 
+    console.log(_id)
+  }
+
   return (
     <div className="card">
       <div className="row no-gutters">
@@ -24,7 +29,9 @@ const PreviewCard = (props) => {
        </div>
        { isSongs &&
         <div className="col-md-3 mt-2 w-25">
-          <input className="w-100 h-60" type="submit" value="DELETE" />
+          <form onSubmit={handleDelete}>
+           <input className="w-100 h-60" type="submit" value="DELETE" />
+          </form>
         </div>
        }  
       </div>
