@@ -9,12 +9,12 @@ const PreviewCard = (props) => {
     <div className="card">
       <div className="row no-gutters">
         <div className="col-md-2">
-          <a href={`/profile/songs/${_id}`}>
+          <a href={`/songs/${_id}`}>
             <img className="card-img rounded-circle border border-white" src={artistPicture} alt={name} width="50"/>
           </a>
         </div>
         <div className="col-md-7">
-        <a href={`/profile/songs/${_id}`}>
+        <a href={`/songs/${_id}`}>
           { isSongs ? 
           <h6 className="card-text text-white ml-1 mt-3">{name}</h6>
           : 

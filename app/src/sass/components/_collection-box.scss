@@ -5,12 +5,18 @@
   h3 {
     color: $cloud; 
   }
+  button {
+    background-color: $darkteal;
+  }
 }
 
 #artist-column {
   background-color: $mutegold;
   padding-left: 0px !important;
   z-index: 1; 
+  button {
+    background-color: $darkteal;
+  }
 }
 
 #song-column {
@@ -23,5 +29,8 @@
     color: $cloud; 
     background-color: $mutegold;
     border: 0px; 
+  }
+  button {
+    background-color: $mutegold;
   }
 }
