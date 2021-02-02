@@ -1,13 +1,19 @@
 import React from "react"; 
 
+import SongModel from "../models/SongModel"; 
+
 const PreviewCard = (props) => {
   const { _id, artistPicture, name } = props.info; 
 
   const isSongs = props.isSongs; 
 
+  const deleteRerender = props.deleteRerender; 
+
   function handleDelete(e) {
     e.preventDefault(); 
-    console.log(_id)
+    SongModel.delete(_id).then(() => {
+      deleteRerender(); 
+    })
   }
 
   return (

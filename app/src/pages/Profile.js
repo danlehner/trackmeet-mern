@@ -17,13 +17,19 @@ const Profile = () => {
     }
   }, []); 
 
+  function deleteRerender() {
+    ProfileModel.show().then(response => {
+      setUser(response.data); 
+    })
+  }
+
 
   return (
     <div>
       {user ? 
       <>
         <ProfileBox user={user} />
-        <CollectionBox user={user} />
+        <CollectionBox user={user} deleteRerender={deleteRerender}/>
         </>
       :
         <p>Loading</p>

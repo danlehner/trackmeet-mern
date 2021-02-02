@@ -14,11 +14,9 @@ const Login = (props) => {
   function handleSubmit(e) {
     e.preventDefault(); 
     AuthModel.login({ email, password }).then(response => {
-      console.log(response); 
       localStorage.setItem("uid", response.signedJwt); 
       UserModel.show().then(response => {
         if (response.status === 200) {
-          console.log(response); 
           setUser(response.data); 
           props.history.push('profile'); 
         } else {

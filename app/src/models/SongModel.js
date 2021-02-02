@@ -10,6 +10,17 @@ class SongModel {
     })
     .then(response => response.json())
   }
+
+  static delete = (id) => {
+    return fetch(`${URL}/${id}`, {
+      method: "DELETE", 
+      headers: {
+        authorization: `Bearer ${localStorage.getItem("uid")}`, 
+        "Content-Type": "application/json"
+      },
+  })
+  .then(response => response.json())
+  }
 }
 
 export default SongModel; 

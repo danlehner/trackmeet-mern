@@ -6,6 +6,8 @@ const CollectionBox = (props) => {
 
   const { songs, artists, genres } = props.user;  
 
+  const deleteRerender = props.deleteRerender; 
+
   function printItems(items, type) {
 
     let isSongs = false; 
@@ -15,11 +17,11 @@ const CollectionBox = (props) => {
 
     if (items.length <= 5) {
       return items.map(item => {
-        return  <PreviewCard key={item._id} info={item} isSongs={isSongs} />
+        return  <PreviewCard key={item._id} info={item} isSongs={isSongs} deleteRerender={deleteRerender} />
      })
     } else {
       return items.slice(0, 5).map(item => {
-        return  <PreviewCard key={item._id} info={item} isSongs={isSongs} />
+        return  <PreviewCard key={item._id} info={item} isSongs={isSongs} deleteRerender={deleteRerender}/>
       })
     }
   }
