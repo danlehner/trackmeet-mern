@@ -1,5 +1,5 @@
 import React from "react"; 
-import { Switch, Route } from "react-router-dom"; 
+import { Switch, Route, Redirect } from "react-router-dom"; 
 
 import Artists from "../pages/Artists/Artists"; 
 import ArtistShow from "../pages/Artists/ArtistShow"; 
@@ -13,31 +13,36 @@ import Register from "../pages/Register";
 import Profile from "../pages/Profile"; 
 import Search from "../pages/Search";
 import ProfileEdit from "../pages/ProfileEdit"; 
+import PageNotFound from "../pages/PageNotFound"
 
 import { useRecoilValue } from "recoil"; 
 import { loggedInState } from "../recoil/selectors";
 
-const Routes = (props) => {
+const Routes = () => {
   const loggedIn = useRecoilValue(loggedInState); 
+
+  console.log(loggedIn); 
 
   return (
     <Switch>
       <Route exact path="/" component={Home} />
       <Route exact path="/register" component={Register} />
       <Route exact path="/login" component={Login} />
-      {loggedIn && (
-        <Switch>
-          <Route exact path="/profile" component={Profile} />
-          <Route exact path="/profile/edit" component={ProfileEdit} />
-          <Route path="/genres/:id" component={GenreShow} />
-          <Route path="/genres" component={Genres} />
-          <Route path="/artists/:id" component={ArtistShow} />
-          <Route path="/artists" component={Artists} />
-          <Route path="/songs/:id" component={SongShow} />
-          <Route path="/songs" component={Songs} />
-          <Route path="/search" component={Search} />
-        </Switch>
-      )}
+        {loggedIn ? 
+          <Switch>
+            <Route exact path="/profile" component={Profile} />
+            <Route exact path="/profile/edit" component={ProfileEdit} />
+            <Route path="/genres/:id" component={GenreShow} />
+            <Route path="/genres" component={Genres} />
+            <Route path="/artists/:id" component={ArtistShow} />
+            <Route path="/artists" component={Artists} />
+            <Route path="/songs/:id" component={SongShow} />
+            <Route path="/songs" component={Songs} />
+            <Route path="/search" component={Search} />
+          </Switch>
+        : 
+         <Redirect to="/login" />
+        }
     </Switch>
   )
 }

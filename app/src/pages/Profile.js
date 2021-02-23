@@ -4,6 +4,7 @@ import ProfileModel from "../models/ProfileModel";
 
 import ProfileBox from "../components/ProfileBox"; 
 import CollectionBox from "../components/CollectionBox"; 
+import Nav from "../components/Nav"; 
 
 const Profile = () => {
 
@@ -28,6 +29,7 @@ const Profile = () => {
     <div>
       {user ? 
       <>
+        <Nav />
         <ProfileBox user={user} />
         <CollectionBox user={user} deleteRerender={deleteRerender}/>
         </>
