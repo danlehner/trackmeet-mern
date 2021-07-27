@@ -7,24 +7,23 @@ body, html {
 }
 
 body, html, p {
-  font-family: 'Josefin Sans', sans-serif !important;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 /* ----------- TYPOGRAPHY ------------ */
 
 h1 {
   font-family: "Clarendon Regular"; 
-  text-shadow: 2px 2px black; 
 }
 
 h2, h3 {
   font-family: Helvetica, Arial, sans-serif;
-  font-weight: 500 !important;
+  font-weight: 500;
 }
 
 a { 
   color: inherit; 
-  text-decoration: none !important;
+  text-decoration: none;
 } 
 
 hr {
@@ -32,7 +31,7 @@ hr {
 }
 
 .text-white {
-  color: $cloud !important; 
+  color: $cloud; 
 }
 
 /* ---------- COMPONENT BOXES -------- */
@@ -50,14 +49,14 @@ hr {
 @media screen and (max-width: 767px) {
 
   .display-1 {
-    font-size: 5em !important; 
+    font-size: 5em; 
   }
 
   .display-3 {
-    font-size: 3.5rem !important; 
+    font-size: 3.5rem; 
   }
   .display-4 {
-    font-size: 2.5rem !important; 
+    font-size: 2.5rem; 
   }
 }
 
@@ -73,9 +72,9 @@ hr {
 /* --------- CARDS --------- */
 
 .card {
-  max-width: 300px !important; 
-  background-color: transparent !important; 
-  border: 0px !important;
+  max-width: 300px; 
+  background-color: transparent; 
+  border: 0px;
 }
 
 .card, .card-img {
@@ -85,5 +84,5 @@ hr {
 /* --------- BUTTONS ------- */
 
 .btn-warning {
-  background-color: #efa801 !important;
+  background-color: #efa801;
 }
