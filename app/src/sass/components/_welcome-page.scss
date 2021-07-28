@@ -54,8 +54,44 @@
   color: $purepurple; 
 }
 
-@media screen and (max-width: 1088px) {
-  #welcome-text h1 {
-    width: 200px; 
+@media screen and (max-width: 1257px) {
+  .mega-text {
+    font-size: 60px; 
+  }
+  #welcome-sub-nav {
+    margin-top: 50px; 
+  }
+  #homepage-side-photo {
+    width: 375px; 
+  }
+}
+
+@media screen and (max-width: 1074px) {
+  .mega-text {
+    font-size: 50px; 
+  }
+
+  #welcome-sub-nav h2 {
+    font-size: 25px; 
+  }
+}
+
+@media screen and (max-width: 910px) {
+  #photo-col {
+    display: none; 
+  }
+  #welcome-text {
+    width: 50vw; 
+    h1, h4 {
+      background-color: $cloud; 
+      padding: 10px; 
+    }
+  }
+
+  #welcome-box {
+    background-image: url("../../assets/images/track-meet-homepage.jpg");
+    background-size: cover;
+    width: 100vw; 
+    height: 100vh; 
   }
 }

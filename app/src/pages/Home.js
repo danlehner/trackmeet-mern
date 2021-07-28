@@ -1,12 +1,6 @@
 import React from "react"; 
 
 const Home = () => {
-  // two columns for the whole welcome box 
-  // left col: h1 that sits flush 
-  // subheading text
-  // div that sits in the center
-  // right aligned link text
-  // right col: image sitting in the center
   return (
     <div id="welcome-box" className="box large-box dead-center">
       <div id="welcome-text" className="col">
@@ -27,7 +21,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="col"> 
+      <div id="photo-col" className="col"> 
         <img id="homepage-side-photo" src="/assets/images/track-meet-homepage.jpg" />
       </div>
     </div>
