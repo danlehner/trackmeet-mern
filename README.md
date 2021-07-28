@@ -22,3 +22,9 @@ There are several areas that I intend to improve on with the new app:
 
 * Integrate with Twilio to be able send SMS lists of "yet-to-listen-to songs" to further enhance the core purpose of the app 
 * Experiment with GraphQL as an alternative to a REST API to reduce overfetching
+
+![Preview of old, currently deployed site](readme-images/track-meet-old-preview.png)
+
+# VS. 
+
+![Preview of site-in-progress](readme-images/track-meet-new-preview.png)
