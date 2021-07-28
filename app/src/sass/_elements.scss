@@ -94,6 +94,10 @@ hr {
   color: $cloud; 
 }
 
+.text-block {
+  margin-top: 20px; 
+}
+
 .mega-text {
   font-size: 80px; 
 }
@@ -110,6 +114,17 @@ hr {
   color: $brightred;
 }
 
+img {
+  width: 400px;
+  z-index: -1;
+}
+
+@media screen and (max-width: 1257px) {
+  img {
+    width: 375px; 
+  }
+}
+
 /* ---------- GLOBAL BOX STYLES -------- */
 
 .dead-center {
@@ -120,7 +135,6 @@ hr {
   transform: translate(-50%, -50%); 
 }
 
-
 .box {
   background: $cloud; 
   // display: flex; <- use if more boxes need flex
@@ -130,11 +144,17 @@ hr {
   width: 80vw; 
 }
 
+.page-box {
+  display: flex; 
+  align-items: center;
+  justify-content: space-between;
+}
+
 .col {
   display: flex; 
   flex-direction: column;
   padding: 30px; 
-  height: 100%; 
+  min-height: 350px; 
 }
 
 /* ---------- COMPONENT BOXES -------- */
