@@ -1,0 +1,61 @@
+#homepage-side-photo {
+  width: 400px;
+  z-index: -1;
+}
+
+#welcome-box {
+  display: flex; 
+  align-items: center;
+  justify-content: space-between;
+}
+
+#welcome-text {
+  display: flex; 
+  align-self: flex-start;
+}
+
+#welcome-sub-nav {
+  display: flex; 
+  flex-direction: column;
+  margin-top: 30px; 
+  div {
+    background: $mutegold; 
+    margin-top: 10px; 
+  }
+  a:after {
+    content: ""; 
+    position: absolute; 
+    bottom: 5px; 
+    height: 4px;
+    width: 100%;
+    left: 0; 
+    background-image: linear-gradient(90deg, $mutegold 0%, $mutegold 50%, $cloud 50%, $cloud 100%); 
+    background-size: 200%; 
+    transition: background-position 0.3s; 
+    transition-delay: 0.1s;
+  }
+  a:hover:after {
+    background-position: -100% 100%;
+  }
+  h2 {
+    line-height: 1.5; 
+    padding: 3px; 
+    font-weight: 600; 
+    position: relative; 
+    z-index: 10; 
+    transition: color 0.3s; 
+    :hover:not(#try-out) {
+      color: $cloud; 
+    }
+  }
+}
+
+#try-out {
+  color: $purepurple; 
+}
+
+@media screen and (max-width: 1088px) {
+  #welcome-text h1 {
+    width: 200px; 
+  }
+}

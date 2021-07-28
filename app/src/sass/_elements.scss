@@ -2,8 +2,59 @@
   font-family: "Clarendon Regular"; 
   src: url('../assets/fonts/clarendon-regular.otf') format("opentype"); 
 }
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ------- GLOBAL BODY STYLES  --------- */
+
 body, html {
-  background-color: $cloud; 
+  background-color: $darkteal; 
 }
 
 body, html, p {
@@ -12,14 +63,22 @@ body, html, p {
 
 /* ----------- TYPOGRAPHY ------------ */
 
-h1 {
+h1, h2, h3, h4 {
   font-family: "Clarendon Regular"; 
 }
 
-h2, h3 {
-  font-family: Helvetica, Arial, sans-serif;
-  font-weight: 500;
+h2 {
+  font-size: 35px; 
 }
+
+h4 {
+  font-size: 18px; 
+}
+
+h1, h2, h3 {
+  font-weight: 500; 
+}
+
 
 a { 
   color: inherit; 
@@ -34,7 +93,51 @@ hr {
   color: $cloud; 
 }
 
+.mega-text {
+  font-size: 80px; 
+}
+
+.flush-text {
+  line-height: .7;
+}
+
+.spaced-text {
+  line-height: 1; 
+}
+
+.highlight-text {
+  color: $brightred;
+}
+
+/* ---------- GLOBAL BOX STYLES -------- */
+
+.dead-center {
+  margin: 0; 
+  position: absolute; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+}
+
+
+.box {
+  background: $cloud; 
+  // display: flex; <- use if more boxes need flex
+}
+
+.large-box {
+  width: 80vw; 
+}
+
+.col {
+  display: flex; 
+  flex-direction: column;
+  padding: 30px; 
+  height: 100%; 
+}
+
 /* ---------- COMPONENT BOXES -------- */
+
 
 .show-container {
   box-shadow: 10px 10px black; 
