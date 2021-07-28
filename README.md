@@ -1,7 +1,7 @@
 ### ⚠⚠⚠ A work-in-progress ⚠⚠⚠
 # Track Meet MERN: The "big refactor" 
 
-In 2020, I completed my capstone project for General Assembly's Software Engineering Immersive: "Track Meet", a personalized music journal to promote conscious music listening. I was proud of my work and what I accomplished on my own and in a relatively short period of time. 
+In 2020, I completed my capstone project for General Assembly's Software Engineering Immersive: ["Track Meet"](https://github.com/danlehner/trackmeet), a personalized music journal to promote conscious music listening. I was proud of my work and what I accomplished on my own and in a relatively short period of time. 
 
 The thing is, though, that the app is..._fine_. Not terrible, but not great. The biggest problem with it is that it _looks_ like a bootcamp grad's project, not the work of a professional. 
 
