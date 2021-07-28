@@ -10,7 +10,7 @@ I know I can do better. So that's exactly what I'm doing.
 ## Goals 
 There are several areas that I intend to improve on with the new app: 
  
-* Create and deploy the API and client sides of the app separately (likely on Heroku and Netlify, respectively) for faster performance, better security and improved separation of concerns / code maintenance
+* Create and deploy the API and client sides of the app separately (likely on Heroku and Netlify, respectively) for faster performance, better security and improved separation of concerns / code maintenance (the code for the API is available for preview on its [README](https://github.com/danlehner/trackmeet-mern-api))
 * Implementing React as a part of the core functionality and data management of the app to eliminate the need for jQuery (or even vanilla JS)-based DOM manipulation, reduce the clutter/amount of code, improve UX and scoping the programmatic functions of the app to where they are relevant 
 * Using Recoil for login/logout functionality to keep up with current trends in React global state management 
 * Giving users the option to try the app without signing up (via generated login credentials and prepopulated data)
