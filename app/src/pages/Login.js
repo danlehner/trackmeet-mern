@@ -30,7 +30,7 @@ const Login = (props) => {
     <div id="login-box" className="box large-box page-box dead-center">
       <div className="col">
         <h1 className="mega-text flush-text">Login</h1>
-        <img src="/assets/images/open.jpeg" />
+        <img src="/assets/images/unsplash-open.jpg" />
       </div>
       <div className="col">
         {error && <p>{error}</p>}

@@ -63,7 +63,7 @@ body, html, p {
 
 /* ----------- TYPOGRAPHY ------------ */
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, label, input {
   font-family: "Clarendon Regular"; 
   color: $black; 
 }
@@ -124,6 +124,33 @@ img {
     width: 375px; 
   }
 }
+
+/* --------- GLOBAL HTML ELEMENTS -------- */
+
+input[type="text"], input[type="password"] {
+  display: block; 
+  margin: 10px 0;
+  height: 30px; 
+  width: 200px; 
+  font-size: 24px; 
+}
+
+.btn {
+  border: none;
+  font-size: 20px; 
+  background-color: $darkteal; 
+  margin-top: 20px; 
+  padding: 10px; 
+  color: $cloud;
+  transition: box-shadow 0.2s ease-in 0.1s; 
+  &:hover {
+    background-color: $cloud; 
+    color: $darkteal; 
+    cursor: pointer;
+    box-shadow: 5px 5px $darkteal;
+  }
+}
+
 
 /* ---------- GLOBAL BOX STYLES -------- */
 
