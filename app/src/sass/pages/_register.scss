@@ -1,0 +1,21 @@
+#register {
+  margin-top: 20px; 
+  input[type="text"], 
+  input[type="password"], 
+  input[type="email"] {
+    display: inline; 
+    height: 15px; 
+    width: 120px; 
+    margin: 5px 0 5px 10px; 
+  }
+
+  label {
+    font-size: 15px; 
+    display: inline;
+    margin: 10px 0; 
+  }
+
+  .form-group {
+    margin-top: 5px; 
+  }
+}
