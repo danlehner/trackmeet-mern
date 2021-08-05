@@ -151,6 +151,9 @@ input[type="text"], input[type="password"] {
   }
 }
 
+.form-group {
+  margin-top: 20px; 
+}
 
 /* ---------- GLOBAL BOX STYLES -------- */
 
@@ -171,6 +174,10 @@ input[type="text"], input[type="password"] {
   width: 80vw; 
 }
 
+.med-box {
+  width: 65vw; 
+}
+
 .page-box {
   display: flex; 
   align-items: center;
@@ -182,6 +189,10 @@ input[type="text"], input[type="password"] {
   flex-direction: column;
   padding: 30px; 
   min-height: 350px; 
+}
+
+.half-col {
+  width: 50%; 
 }
 
 /* ---------- COMPONENT BOXES -------- */

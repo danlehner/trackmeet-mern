@@ -1,15 +1,18 @@
-#login-box {
+.login-box {
   img {
-    margin-top: 20px; 
     height: 350px; 
     width: 300px; 
     object-fit: cover;
   }
-  .col {
-    width: 50%; 
-  }
   label {
     font-size: 20px; 
+  }
+}
+
+@media screen and (max-width: 910px) {
+  .login-box .col {
+    align-items: center;
+    justify-content: center;
   }
 }
 

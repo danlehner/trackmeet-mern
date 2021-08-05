@@ -3,7 +3,7 @@ import React from "react"
 const Home = () => {
   return (
     <div id="welcome-box" className="box page-box large-box dead-center">
-      <div id="welcome-text" className="col">
+      <div id="welcome-text" className="col half-col">
         <h1 className="mega-text flush-text">Welcome to <br /><span className="highlight-text spaced-text">Track Meet</span>.</h1>
         <h4>Listen carefully.</h4>
         <div id="welcome-sub-nav"> 
@@ -21,7 +21,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div id="photo-col" className="col"> 
+      <div className="col half-col photo-col"> 
         <img id="homepage-side-photo" src="/assets/images/track-meet-homepage.jpg" />
       </div>
     </div>

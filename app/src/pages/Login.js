@@ -27,14 +27,14 @@ const Login = (props) => {
   }
 
   return (
-    <div id="login-box" className="box large-box page-box dead-center">
-      <div className="col">
-        <h1 className="mega-text flush-text">Login</h1>
+    <div className="box med-box page-box dead-center login-box">
+      <div className="col half-col photo-col">
         <img src="/assets/images/unsplash-open.jpg" />
       </div>
-      <div className="col">
+      <div className="col half-col form-col">
         {error && <p>{error}</p>}
           <form onSubmit={handleSubmit}>
+          <h1 className="mega-text flush-text">Login</h1>
           <div className="form-group">
             <label htmlFor="email">Email</label>
             <input 

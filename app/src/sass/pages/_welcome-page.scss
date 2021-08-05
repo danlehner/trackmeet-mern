@@ -67,8 +67,11 @@
 }
 
 @media screen and (max-width: 910px) {
-  #photo-col {
+  .photo-col {
     display: none; 
+  }
+  .form-col {
+    width: 100%; 
   }
   #welcome-text {
     width: 50vw; 
