@@ -6,11 +6,11 @@ const ProfileBox = (props) => {
 
   return (
     <div>
-      <div className="jumbotron profile-jumbotron">
+      {/* <div className="jumbotron profile-jumbotron">
         <div className="container">
           <h1 className="display-1 text-white">My Profile</h1>
         </div>
-      </div>
+      </div> */}
       <div className="container w-75 show-container mt-5 mb-5 profile-box">
         <div className="row h-100">
           <div className="col pb-5 prof-left">

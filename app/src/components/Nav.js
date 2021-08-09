@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react"
 import { NavLink } from "react-router-dom"
+import { FaAlignRight } from "react-icons/fa"
 
 import { useRecoilState } from "recoil"
 import { userState } from "../recoil/atoms"
@@ -35,17 +36,24 @@ const Nav = (props) => {
   return (
     <>
     { user && 
-      <nav className="navbar">
+      <nav id="navbar">
        <div className={showNav ? "nav-left show-nav" : "nav-left"}> {/* .nav-left is set to "display: none;"" by default on mobile sizes - .show-nav overrides the style */}
-         <NavLink to="/">Track Meet</NavLink>
-         <NavLink to="/search" className="nav-link white" >SEARCH</NavLink>
-         <NavLink to="/profile" className="nav-link white" >{user.username}'s PROFILE</NavLink>
-         <button onClick={logout}>
-          <input type="submit" className="nav-link" value="Log Out"/> 
-        </button>
+         <NavLink id="logo" to="/">Track Meet</NavLink>
+         <NavLink to="/search">Search</NavLink>
+         <NavLink to="/profile">{user.username}'s Profile</NavLink>
+         <NavLink to="/about">About</NavLink>
+         <button onClick={logout} id="logout">Logout</button>
        </div>
        <div className="hamburger-section">
-         <button onClick={() => setShowNav(!showNav)} id="hamburger">Hamburger goes here</button>
+         <button onClick={() => setShowNav(!showNav)} id="hamburger">
+           {showNav ? 
+            <FaAlignRight size={25} style={{ color: '#fafafa' }}
+             />
+           : 
+            <FaAlignRight size={40} style={{ color: '#fafafa' }}
+             />
+           }
+         </button>
        </div>
      </nav>
     }
