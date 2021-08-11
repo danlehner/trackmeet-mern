@@ -4,22 +4,55 @@
   }
 }
 
-.profile-jumbotron {
-  background-image: url('../../assets/images/record-profile.jpg'); 
-  background-size: cover; 
-  background-position: bottom;
+.full-width {
+  width: 100vw; 
 }
 
-.prof-left {
+
+#profile-box {
   background-color: $darkteal;
-  h2 {
-    margin-left: -.35em; 
+  padding: 60px; 
+  button {
+    margin-top: 30px; 
+    color: $cloud; 
+    background-color: #212121;
+  }
+  h1, h2, h3, h4, h5, h6, p {
     color: $cloud; 
   }
+  h1 {
+    font-size: 45px; 
+  }
+  p {
+    margin-top: 20px; 
+  }
+  img {
+    display: block; 
+    margin-left: auto; 
+    margin-right: 20px; 
+    height: 300px; 
+    width: 300px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+  }
 }
 
+
 @media screen and (max-width: 767px) {
-  .profile-box button {
-    margin-bottom: 2em; 
+  #profile-box {
+    flex-direction: column;
+    padding: 20px;
+    img {
+      margin: 0 auto; 
+    }
+    button {
+      margin-top: 15px; 
+    }
   }
+
+  #prof-info {
+    text-align: center; 
+    margin-top: 20px; 
+  }
+
 }
